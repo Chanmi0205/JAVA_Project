@@ -1,0 +1,50 @@
+import java.time.LocalDate;
+
+public class control2 {
+	public static void main(String[] args) {
+		
+		// 제어문, 다른 말로 조건문라고도 불림.(만약 이 '조건'일 경우)
+
+		// 현재 날짜 구하는 함수
+		LocalDate now = LocalDate.now();
+		int day =  now.getMonth().getValue();
+		
+		// 현재 몇 월인지 출력함.
+		System.out.println(day);
+		
+		switch(day) {
+			
+			/* day가 12, 1, 2면  
+			 * System.out.println("현재 겨울입니다."); break;
+			 * 위 코드를 실행. */
+			case 12, 1, 2:
+				System.out.println("현재 겨울입니다.");
+		 		break;
+		 		
+		 	/* day가 3, 4, 5면  
+		     * System.out.println("현재 봄입니다."); break;
+		     * 위 코드를 실행. */
+			case 3, 4, 5:
+				System.out.println("현재 봄입니다.");
+			 	break;
+			 	
+			/* day가 6, 7, 8면  
+			 * System.out.println("현재 여름입니다."); break;
+		     * 위 코드를 실행. */
+			case 6, 7, 8:
+				System.out.println("현재 여름입니다.");
+				break;
+				
+			/* day가 9, 10, 11면  
+			 * System.out.println("현재 가을입니다."); break;
+			 * 위 코드를 실행. */	
+			case 9, 10, 11:
+				System.out.println("현재 가을입니다.");
+			  	break;
+
+		}
+		
+	}
+
+}
+s

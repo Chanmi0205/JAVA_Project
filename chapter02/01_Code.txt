@@ -1,0 +1,51 @@
+
+public class Variable {
+	public static void main(String[] args) {
+		
+		// 정수형 
+		int age = 18;
+		
+		// 실수형 
+		double py = 3.14;
+		float flo = 1.5f;
+		
+		// 문자 
+		char a = 'a';
+		
+		// 문자열(참조 타입)
+		String name = "박찬미";
+		
+		// 참(1, true)과 거짓(0, false)
+		boolean ready = false;
+		
+		// 문장 + 변수 출력하는 방법
+		System.out.println("안녕하십니까 저는 " + age + "살, " + name + "입니다.");
+		
+		// 숫자 타입 + 숫자 타입 | 계산되어 출력됨
+		System.out.println(age + py);
+		System.out.println(age + flo);
+		
+		// 숫자 타입 + 문자 | 문자는 아스키코드(a->97)로 변환되어 계산되어 출력되는 것을 볼 수 있음.
+		System.out.println(age + a);
+		
+		// 숫자 타입 + 문자열 
+		System.out.println(age + name);
+		
+		// 자동 형변환
+		int num1 = 10;
+		double num2 = num1;
+		
+		// 강제 형변환
+		double num3 = 3.14;
+		int num4 = (int)num3;
+		
+		// boolean 예
+		if ( ready == true ) {
+			System.out.println("저는 문제 풀 준비가 되었습니다.");
+		} else {
+			System.out.println("아직 모르는 부분이 있습니다.");
+		}
+		
+		System.out.println(name.length());
+	}
+}

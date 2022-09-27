@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class loop {
+	public static void main(String[] args) {
+		
+		// 무한 루프
+		while(true) {
+			
+			// 입력받을 수 있는 함수를 사용하겠다고 선언.
+			Scanner sc = new Scanner(System.in);
+			
+			/* c언어 
+			 * 	int a;
+			 * 	scanf("%d", &a); 
+			 * */
+			int num = sc.nextInt();
+			
+			// num이 0일시 해당 반복문을 벗어남.
+			if ( num == 0 ) {
+				break;
+			}
+			
+			/* 만약 num이 2의 배수이면서 3의 배수인 경우 
+			 * 다음줄에 있는 코드(System.out.println("num은 2와 3의 배수이자 6의 배수입니다.");)
+			 * 실행함. */
+			if ( num%2==0 && num%3==0 ) {
+				System.out.println("num은 2와 3의 배수이자 6의 배수입니다.");
+			} 
+			/* 위 조건이 아닌 경우 'num%2==0 && num%3==0'이 아닌 경우
+			 * 'num%2==0 && num%3==0'이게 아니라면 'num%2==0'이거인가요?
+			 * 하고 다음 코드를 거침. 아래 코드('num%3==0') 또한 마찬가지임. */
+			else if ( num%2==0 ) {
+				System.out.println("num은 2의 배수입니다.");
+			} else if ( num%3==0 ) {
+				System.out.println("num은 3의 배수입니다.");
+			/* 위 조건이 전부 아닌 경우 다음 코드
+			 * (System.out.println("num은 2의 배수도 3의 배수도 아닙니다.");)
+			 * 실행함.*/
+			} else {
+				System.out.println("num은 2의 배수도 3의 배수도 아닙니다.");
+			}
+			
+		}
+	}
+
+}

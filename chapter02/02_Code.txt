@@ -1,0 +1,34 @@
+
+public class control {
+	public static void main(String[] args) {
+		
+		// 제어문, 다른 말로 조건문라고도 불림.(만약 이 '조건'일 경우)
+
+		int num1 = 15;
+		int num2 = 3;
+		
+		/* 만약 아래 코드가 참일 경우 
+		 * (System.out.println("num1, num2 모두 5의 배수입니다.");)
+		 * 위 코드 실행 후 제어문(if)을 빠져나옴. 
+		 */
+		if ( num1%5==0 || num2%5==0 ) {
+			System.out.println("num1, num2 모두 5의 배수입니다.");
+			
+		// if(num1%5==0||num2%5==0) 아닐 경우
+		} else if ( num1%5==0 ) {
+			System.out.println("num1만 5의 배수입니다.");
+			
+		/* if(num1%5==0||num2%5==0), 
+		 * 		else if(num1%5==0) 아닐 경우 
+		 */
+		} else if ( num2%5==0 ) {
+			System.out.println("num2만 5의 배수입니다.");
+			
+		/* if(num1%5==0||num2%5==0), else if(num1%5==0),
+		 * else if(num2%5==0)를 제외한 정수일 경우 아래 코드를 실행함. 
+		 */
+		} else {
+			System.out.println("num1, num2 모두 5의 배수가 아닙니다.");
+		}
+	}
+}
