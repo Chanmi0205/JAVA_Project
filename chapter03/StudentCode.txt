@@ -1,0 +1,36 @@
+
+public class Student {
+	
+	// 이름
+	String name;
+	
+	// 나이
+	int ige;
+	
+	// 성별
+	char gender;
+	
+	// 키
+	double height;
+	
+	// 몸무게
+	double weight;
+	
+	// 생년월일
+	int birthDate;
+	
+	// 생성자
+	public Student() {
+		System.out.println("학생 생성");
+	}
+
+	// 생각하다
+	public void think() {
+		System.out.println("닭강정 먹고싶다...");
+	}
+	
+	// 숨쉬다
+	public void huhahuha() {
+		System.out.println("후하후하");
+	}
+}
