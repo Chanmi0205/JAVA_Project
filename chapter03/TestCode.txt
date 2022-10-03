@@ -1,0 +1,12 @@
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+		// 인스턴스 생성 방법
+		Student student = new Student();
+		
+		Student chanmi = new Student("박찬미", 18, 'g', 300, 050205); 
+	}
+
+}

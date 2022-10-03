@@ -13,15 +13,21 @@ public class Student {
 	// 키
 	double height;
 	
-	// 몸무게
-	double weight;
-	
 	// 생년월일
 	int birthDate;
 	
 	// 생성자
 	public Student() {
-		System.out.println("학생 생성");
+		System.out.println("디폴트 생성자");
+	}
+	
+	// 매개변수(name, ige, gender, height, birthDate) 받는 생성자
+	public Student(String name, int ige, char gender, double height, int birthDate) {
+		this.name = name;
+		this.ige = ige;
+		this.gender = gender;
+		this.height = height;
+		this.birthDate = birthDate;
 	}
 
 	// 생각하다
