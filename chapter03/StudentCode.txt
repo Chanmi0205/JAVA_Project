@@ -2,10 +2,10 @@
 public class Student {
 	
 	// 이름
-	String name;
+	public String name;
 	
 	// 나이
-	int ige;
+	public int ige;
 	
 	// 성별
 	char gender;
@@ -28,6 +28,11 @@ public class Student {
 		this.gender = gender;
 		this.height = height;
 		this.birthDate = birthDate;
+	}
+	
+	public Student(String name, int ige) {
+		this.name = name;
+		this.ige = ige;
 	}
 
 	// 생각하다

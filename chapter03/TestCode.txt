@@ -7,6 +7,12 @@ public class Test {
 		Student student = new Student();
 		
 		Student chanmi = new Student("박찬미", 18, 'g', 300, 050205); 
+		
+		Student str[] = new Student[10];
+		
+		for(int i=0; i<str.length; i++) {
+			str[i] = new Student("student" + i, 18);
+		}
 	}
 
 }
