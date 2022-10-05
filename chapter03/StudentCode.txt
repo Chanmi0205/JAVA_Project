@@ -44,4 +44,6 @@ public class Student {
 	public void huhahuha() {
 		System.out.println("후하후하");
 	}
+	
+	
 }
